@@ -1,0 +1,27 @@
+GHCi, version 8.0.2: http://www.haskell.org/ghc/  :? for help
+Prelude> :load hw5
+[1 of 1] Compiling Main             ( hw5.hs, interpreted )
+Ok, modules loaded: Main.
+*Main> duplicates "Two or more"
+True
+*Main> duplicates "Exactly four"
+False
+*Main> zap 'a' "Abracadabra"
+"Abrcdbr"
+*Main> unique "Abracadabra"
+"Acd"
+*Main> prefix "music" "musician"
+True
+*Main> prefix "music" "musingcian"
+False
+*Main> subseq "music" "computer science"
+True
+*Main> subseq "music" "mustard cider"
+False
+*Main> substring "music" "computer science"
+False
+*Main> substring "mile" "smiled"
+True
+*Main> subsequences "abcb"
+["","a","b","ab","c","ac","bc","abc","b","ab","bb","abb","cb","acb","bcb","abcb"]
+*Main> 

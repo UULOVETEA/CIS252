@@ -1,0 +1,27 @@
+GHCi, version 8.0.2: http://www.haskell.org/ghc/  :? for help
+Prelude> :load lab4
+[1 of 1] Compiling Main             ( lab4.hs, interpreted )
+Ok, modules loaded: Main.
+*Main> cycle3 8 10 20 30
+[10,20,30,10,20,30,10,20]
+*Main> cycle3 0 10 20 30
+[]
+*Main> cycle3 (-6) 10 20 30
+*** Exception: cycle3: requires nonnegative input
+CallStack (from HasCallStack):
+  error, called at lab4.hs:9:21 in main:Main
+*Main> cycle3 6 21 14 3
+[21,14,3,21,14,3]
+*Main> switchback 13 0 77
+[0,77,77,0,0,77,77,0,0,77,77,0,0]
+*Main> switchback 1 0 77
+[0]
+*Main> switchback (-13) 0 77
+*** Exception: switchback: requires nonnegative input
+CallStack (from HasCallStack):
+  error, called at lab4.hs:16:27 in main:Main
+*Main> switchback 0 0 77
+[]
+*Main> switchback 9 3 10
+[3,10,10,3,3,10,10,3,3]
+*Main> 

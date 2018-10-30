@@ -1,0 +1,31 @@
+GHCi, version 8.0.2: http://www.haskell.org/ghc/  :? for help
+Prelude> :load hw3
+[1 of 1] Compiling Main             ( hw3.hs, interpreted )
+Ok, modules loaded: Main.
+*Main> squarePairs 4 (-1)
+[(-1,1),(0,0),(1,1),(2,4)]
+*Main> squarePairs 5 4
+[(4,16),(5,25),(6,36),(7,49),(8,64)]
+*Main> squarePairs 0 4
+[]
+*Main> countDownBy 17 2 3
+[17,14,11,8,5,2]
+*Main> countDownBy 1 2 3
+[]
+*Main> steps 7 3
+[]
+*Main> steps 3 7
+[[3],[3,4],[3,4,5],[3,4,5,6],[3,4,5,6,7]]
+*Main> indexChar 7 2 'a'
+"a!aaaaa"
+*Main> indexChar 3 21 'a'
+"aaa"
+*Main> diag 7 's'
+["!ssssss","s!sssss","ss!ssss","sss!sss","ssss!ss","sssss!s","ssssss!"]
+*Main> diag 0 's'
+[]
+*Main>:q 
+*Main> :q
+Leaving GHCi.
+
+Process haskell finished

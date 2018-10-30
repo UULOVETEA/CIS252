@@ -1,0 +1,11 @@
+GHCi, version 8.0.2: http://www.haskell.org/ghc/  :? for help
+Prelude> :load lab8
+[1 of 1] Compiling Main             ( lab8.hs, interpreted )
+Ok, modules loaded: Main.
+*Main> (uncurry3 uncurry3Test) (3,4,5)
+20
+*Main> (compressFun simple) 10
+40
+*Main> (doTwo (length, reverse)) "the end"
+(7,"dne eht")
+*Main> 

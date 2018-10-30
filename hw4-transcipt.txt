@@ -1,0 +1,45 @@
+GHCi, version 8.0.2: http://www.haskell.org/ghc/  :? for help
+Prelude> :load hw4
+[1 of 1] Compiling Main             ( hw4.hs, interpreted )
+Ok, modules loaded: Main.
+*Main> myProduct [3,6,2,10]
+360
+*Main> myProduct [7,18,2,0,9]
+0
+*Main> myProduct []
+1
+*Main> shout "Let's go, Orange!"
+"LET'S GO, ORANGE!"
+*Main> zap 'a' "abbadaab"
+"bbdb"
+*Main> pairUp [3,5,2,9]
+[(3,5),(2,9)]
+*Main> pairUp "abcde"
+[('a','b'),('c','d'),('e','e')]
+*Main> neighbors [3,5,2,9]
+[(3,5),(5,2),(2,9)]
+*Main> neighbors "abcde"
+[('a','b'),('b','c'),('c','d'),('d','e')]
+*Main> bagCount bag1
+4
+*Main> bagCount bag2
+6
+*Main> bagCount bag3
+5
+*Main> addToBag 'y' bag1
+[('z',1),('e',2),('k',1),('y',1)]
+*Main> addToBag 'e' bag1
+[('z',1),('e',3),('k',1)]
+*Main> removeFromBag 'e' bag1
+[('z',1),('e',1),('k',1)]
+*Main> removeFromBag 'e' bag2
+[('y',2),('a',1),('n',1),('c',1)]
+*Main> removeFromBag 'a' bag1
+[('z',1),('e',2),('k',1)]
+*Main> :Q
+unknown command ':Q'
+use :? for help.
+*Main> :q
+Leaving GHCi.
+
+Process haskell finished

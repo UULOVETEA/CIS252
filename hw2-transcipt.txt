@@ -1,0 +1,39 @@
+GHCi, version 8.0.2: http://www.haskell.org/ghc/  :? for help
+Prelude> :load hw2
+[1 of 1] Compiling Main             ( hw2.hs, interpreted )
+Ok, modules loaded: Main.
+*Main> compareChars 'R' (toUpper 'r') 'R'
+"All  equal"
+*Main> compareChars 'R' 'r' 'R'
+"Two match"
+*Main> compareChars 'a' 'B' 'b'
+"All distinct"
+*Main> combine 4 2 8
+428
+*Main> combine 0 3 0
+30
+*Main> combine 4 12 3
+-1
+*Main> splitFloat 3.78
+(3,0.78)
+*Main> splitFloat (-3.78)
+(-3,-0.78)
+*Main> stdCost 2 7 False
+105
+*Main> stdCost 2 7 True
+80
+*Main> powerCost 3 20 False
+176
+*Main> powerCost 3 20 True
+151
+*Main> powerCost 2 7 False
+88
+*Main> powerCost 2 7 True
+63
+*Main> bestPlan 1 3
+"Standard"
+*Main> bestPlan 2 7
+"Power user"
+*Main> bestPlan 1 6
+"Same cost"
+*Main> 

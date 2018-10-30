@@ -1,0 +1,24 @@
+GHCi, version 8.0.2: http://www.haskell.org/ghc/  :? for help
+Prelude> :load lab7
+[1 of 1] Compiling Main             ( lab7.hs, interpreted )
+Ok, modules loaded: Main.
+*Main> roundEm [49.3, 121.73, 4.19]
+[49,122,4]
+*Main> getLengths ["Spring","break’s","almost","here"]
+[("Spring",6),("break\8217s",7),("almost",6),("here",4)]
+*Main> grabOdds [34,-7,2,0,-8,5,1]
+[-7,5,1]
+*Main> negatives [('b',10),('r',-2),('e',-3),('a',14),('k',-12)]
+[('r',-2),('e',-3),('k',-12)]
+*Main> mystery 6 [1,2,3]
+[100,200,300]
+*Main> mystery2 6 [1,2,3]
+[100,200,300]
+*Main> mystery 6 [10,20,30]
+[1000]
+*Main> mystery2 6 [10,20,30]
+[1000]
+*Main> :q
+Leaving GHCi.
+
+Process haskell finished

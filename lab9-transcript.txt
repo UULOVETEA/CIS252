@@ -1,0 +1,33 @@
+GHCi, version 8.0.2: http://www.haskell.org/ghc/  :? for help
+Prelude> :load lab9
+[1 of 1] Compiling Main             ( lab9.hs, interpreted )
+Ok, modules loaded: Main.
+*Main> :t one
+one :: Device
+*Main> :t two
+two :: ([Char], Int -> Bool)
+*Main> :t three
+three :: [Char] -> Bool
+*Main> :t four
+four :: [Char] -> [Bool]
+*Main> :t five
+five :: [Bool -> Device]
+*Main> :t six
+six :: (Bool, Integer, Char) -> Char
+*Main> :t seven
+seven :: a
+*Main> :t eight
+eight :: [[Double] -> [Shape]]
+*Main> :t nine
+nine :: Char -> Bool -> Char
+*Main> :t ten
+ten :: t1 -> t -> t
+*Main> :t eleven
+eleven :: ([Char], [b]) -> [(Char, b)]
+*Main> :t twelve
+twelve :: [(a, b) -> c] -> [a -> b -> c]
+*Main> :t thirteen
+thirteen :: a
+*Main> :t fourteen
+fourteen :: a
+*Main> 

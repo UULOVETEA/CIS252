@@ -1,0 +1,112 @@
+GHCi, version 8.0.2: http://www.haskell.org/ghc/  :? for help
+Prelude> :load hw8
+[1 of 2] Compiling BinaryTrees      ( BinaryTrees.hs, interpreted )
+[2 of 2] Compiling Main             ( hw8.hs, interpreted )
+Ok, modules loaded: BinaryTrees, Main.
+*Main> height tree1
+0
+*Main> height tree2
+2
+*Main> autumn tree3
+BNode 100 (BNode 75 Empty (BNode 82 Empty Empty)) (BNode 120 Empty (BNode 147 Empty Empty))
+*Main> full tree4
+False
+*Main> full tree5
+True
+*Main> mirror tree2
+BNode 8 (BNode 20 Empty Empty) (BNode 13 Empty (BNode 12 Empty Empty))
+*Main> mapTree (\ w -> w*10) tree2
+BNode 80 (BNode 130 Empty (BNode 120 Empty Empty)) (BNode 200 Empty Empty)
+*Main> depthVals 1 tree2
+[13,20]
+*Main> depthVals 2 tree2
+[12]
+*Main> minValue 20 tree2
+8
+*Main> onPath [Lft, Rght] tree2
+[8,13,12]
+*Main> :r
+Ok, modules loaded: BinaryTrees, Main.
+*Main> onPath [Lft, Rght] tree3
+[100,75,82]
+*Main> onPath [Lft, Lft] tree3
+[100,75,65]
+*Main> onPath [Rght, Rght] tree3
+[100,120,147]
+*Main> :r
+[2 of 2] Compiling Main             ( hw8.hs, interpreted )
+
+hw8.hs:44:9: error:
+    • Couldn't match type ‘Dir’ with ‘[Dir]’
+      Expected type: Path
+        Actual type: Dir
+    • In the pattern: Lft
+      In an equation for ‘onPath’:
+          onPath (Lft) (BNode x left right) = [x] ++ onPath left
+
+hw8.hs:44:45: error:
+    • Couldn't match expected type ‘[a]’
+                  with actual type ‘BTree a0 -> [a0]’
+    • Probable cause: ‘onPath’ is applied to too few arguments
+      In the second argument of ‘(++)’, namely ‘onPath left’
+      In the expression: [x] ++ onPath left
+      In an equation for ‘onPath’:
+          onPath (Lft) (BNode x left right) = [x] ++ onPath left
+    • Relevant bindings include
+        right :: BTree a (bound at hw8.hs:44:28)
+        left :: BTree a (bound at hw8.hs:44:23)
+        x :: a (bound at hw8.hs:44:21)
+        onPath :: Path -> BTree a -> [a] (bound at hw8.hs:42:1)
+
+hw8.hs:44:52: error:
+    • Couldn't match type ‘BTree a’ with ‘[Dir]’
+      Expected type: Path
+        Actual type: BTree a
+    • In the first argument of ‘onPath’, namely ‘left’
+      In the second argument of ‘(++)’, namely ‘onPath left’
+      In the expression: [x] ++ onPath left
+    • Relevant bindings include
+        right :: BTree a (bound at hw8.hs:44:28)
+        left :: BTree a (bound at hw8.hs:44:23)
+        x :: a (bound at hw8.hs:44:21)
+        onPath :: Path -> BTree a -> [a] (bound at hw8.hs:42:1)
+
+hw8.hs:45:9: error:
+    • Couldn't match type ‘Dir’ with ‘[Dir]’
+      Expected type: Path
+        Actual type: Dir
+    • In the pattern: Rght
+      In an equation for ‘onPath’:
+          onPath (Rght) (BNode x left right) = [x] ++ onPath right
+
+hw8.hs:45:45: error:
+    • Couldn't match expected type ‘[a]’
+                  with actual type ‘BTree a1 -> [a1]’
+    • Probable cause: ‘onPath’ is applied to too few arguments
+      In the second argument of ‘(++)’, namely ‘onPath right’
+      In the expression: [x] ++ onPath right
+      In an equation for ‘onPath’:
+          onPath (Rght) (BNode x left right) = [x] ++ onPath right
+    • Relevant bindings include
+        right :: BTree a (bound at hw8.hs:45:29)
+        left :: BTree a (bound at hw8.hs:45:24)
+        x :: a (bound at hw8.hs:45:22)
+        onPath :: Path -> BTree a -> [a] (bound at hw8.hs:42:1)
+
+hw8.hs:45:52: error:
+    • Couldn't match type ‘BTree a’ with ‘[Dir]’
+      Expected type: Path
+        Actual type: BTree a
+    • In the first argument of ‘onPath’, namely ‘right’
+      In the second argument of ‘(++)’, namely ‘onPath right’
+      In the expression: [x] ++ onPath right
+    • Relevant bindings include
+        right :: BTree a (bound at hw8.hs:45:29)
+        left :: BTree a (bound at hw8.hs:45:24)
+        x :: a (bound at hw8.hs:45:22)
+        onPath :: Path -> BTree a -> [a] (bound at hw8.hs:42:1)
+Failed, modules loaded: BinaryTrees.
+*BinaryTrees> :q
+Leaving GHCi.
+
+Process haskell finished

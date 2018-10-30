@@ -1,0 +1,10 @@
+GHCi, version 8.0.2: http://www.haskell.org/ghc/  :? for help
+Prelude> :load lab1
+[1 of 1] Compiling Main             ( lab1.hs, interpreted )
+Ok, modules loaded: Main.
+*Main> timesPlus 47 1000
+(47000,1047)
+*Main> :q
+Leaving GHCi.
+
+Process haskell finished

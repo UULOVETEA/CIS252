@@ -1,0 +1,109 @@
+GHCi, version 8.0.2: http://www.haskell.org/ghc/  :? for help
+Prelude> :load hw10
+[1 of 1] Compiling Main             ( hw10.hs, interpreted )
+Ok, modules loaded: Main.
+*Main> stats
+Please enter three numbers: 
+10
+25
+12
+(15.666667,12.0)
+*Main> stats
+Please enter three numbers: 
+123
+231
+44
+(132.66667,123.0)
+*Main> printVert "Greetings!"
+G
+r
+e
+e
+t
+i
+n
+g
+s
+!
+10
+*Main> printVert "Orange!"
+O
+r
+a
+n
+g
+e
+!
+7
+*Main> displayWords
+Please enter a line of text: Here is my line of text!
+Here
+is
+my
+line
+of
+text!
+*Main> displayWords
+Please enter a line of text: Let's Go Orange!
+Let's
+Go
+Orange!
+*Main> displayWords2
+Please enter a line of text: Here is my line of text!
+1. Here
+2. is
+3. my
+4. line
+5. of
+6. text!
+*Main> displayWords2
+Please enter a line of text: Let's Go Orange!
+1. Let's
+2. Go
+3. Orange!
+*Main> nonzeros
+5
+-7
+4
+1
+0
+[5,-7,4,1]
+*Main> nonzeros
+12
+343
+65
+-23
+101
+0
+[12,343,65,-23,101]
+*Main> posAndNegs
+Please enter a series of integers (0 to terminate ): 
+3
+-9
+2
+40
+1000
+-2
+0
+Number of nonzero values entered: 6
+Number of positive entered: 4
+Smallest negative number entered: -9
+*Main> posAndNegs
+Please enter a series of integers (0 to terminate ): 
+3
+8
+2
+0
+Number of nonzero values entered: 3
+Number of positive entered: 3
+You did not enter any negative numbers.
+*Main> posAndNegs
+Please enter a series of integers (0 to terminate ): 
+-10
+-324
+-1
+0
+Number of nonzero values entered: 3
+Number of positive entered: 0
+Smallest negative number entered: -324
+*Main> 

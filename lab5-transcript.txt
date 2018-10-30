@@ -1,0 +1,25 @@
+GHCi, version 8.0.2: http://www.haskell.org/ghc/  :? for help
+Prelude> :load lab5
+[1 of 1] Compiling Main             ( lab5.hs, interpreted )
+Ok, modules loaded: Main.
+*Main> one
+[201,202,203,204,205,206,207,208,209,210]
+*Main> two
+[True,False,True,False,True,False,True,False,True,False]
+*Main> three
+[2,3,4,5,6,7,8]
+*Main> four
+[[4],[8],[12],[16],[20]]
+*Main> five
+[(5,True),(10,True),(15,True),(20,False),(25,False)]
+*Main> six
+[(10,20),(30,40),(50,60),(70,80),(90,100)]
+*Main> seven
+[[10],[9],[8],[7],[6],[5],[4],[3],[2],[1]]
+*Main> eight
+[[10],[8],[6],[4],[2],[0]]
+*Main> nine
+[[3,4],[3,4,5,6],[3,4,5,6,7,8],[3,4,5,6,7,8,9,10]]
+*Main> ten
+[30,25,20,15,10,5,0]
+*Main> 

@@ -1,0 +1,30 @@
+GHCi, version 8.0.2: http://www.haskell.org/ghc/  :? for help
+Prelude> :load lab6
+[1 of 1] Compiling Main             ( lab6.hs, interpreted )
+Ok, modules loaded: Main.
+*Main> GoodLuck > Wits
+True
+*Main> Wits > Speed
+True
+*Main> Speed > Brawn
+True
+*Main> Brawn > GoodLuck
+False
+*Main> battle fred bella
+"Isabel wins!"
+*Main> battle rex fred
+"Rex the Renegade wins!"
+*Main> upgrade fred Wits
+Cr "Frederick" Fish Wits
+*Main> upgrade rex Wits
+Cr "Rex the Renegade" Mongoose GoodLuck
+*Main> upgradeAll Wits [fred, rex, bella]
+[Cr "Frederick" Fish Wits,Cr "Rex the Renegade" Mongoose GoodLuck,Cr "Isabel" Tiger Wits]
+*Main> upgradeAll GoodLuck [fred, rex, bella]
+[Cr "Frederick" Fish GoodLuck,Cr "Rex the Renegade" Mongoose GoodLuck,Cr "Isabel" Tiger GoodLuck]
+*Main> upgradeAll Brawn [fred, rex, bella]
+[Cr "Frederick" Fish Brawn,Cr "Rex the Renegade" Mongoose GoodLuck,Cr "Isabel" Tiger Speed]
+*Main> :q
+Leaving GHCi.
+
+Process haskell finished

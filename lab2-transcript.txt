@@ -1,0 +1,13 @@
+GHCi, version 8.0.2: http://www.haskell.org/ghc/  :? for help
+Prelude> :load lab2
+[1 of 1] Compiling Main             ( lab2.hs, interpreted )
+Ok, modules loaded: Main.
+*Main> price 3 4
+5050
+*Main> price 7 8
+9965
+*Main> price (-2) 4
+0
+*Main> price (-8) 5
+0
+*Main> 

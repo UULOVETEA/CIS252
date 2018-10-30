@@ -1,0 +1,40 @@
+GHCi, version 8.0.2: http://www.haskell.org/ghc/  :? for help
+Prelude> :load lab03
+[1 of 1] Compiling Main             ( lab03.hs, interpreted )
+Ok, modules loaded: Main.
+*Main> zero
+5
+*Main> one
+9.0
+*Main> two
+False
+*Main> three
+False
+*Main> four
+"Syracuse"
+*Main> five
+True
+*Main> six
+True
+*Main> seven
+True
+*Main> eight
+True
+*Main> nine
+False
+*Main> ten
+True
+*Main> eleven
+100
+*Main> twelve
+25
+*Main> thirteen
+False
+*Main> fourteen
+True
+*Main> fifteen
+49
+*Main> :quit
+Leaving GHCi.
+
+Process haskell finished
